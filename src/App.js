@@ -43,6 +43,7 @@ function App() {
           <TruthOrDare/>
           <DumselodsGame/>
           <ThankYou />
+          <Analytics/>
         </>
       )}
     </div>
