@@ -1,0 +1,95 @@
+.balloon-game-container {
+    text-align: center;
+    padding: 40px;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    min-height: 60vh;
+  }
+  
+  .balloon-title {
+    font-size: 2rem;
+    color: #d32f2f;
+    margin-bottom: 30px;
+    animation: floatFadeIn 1s ease-in-out;
+  }
+  
+  .balloon-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .balloon {
+    width: 120px;
+    height: 180px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .balloon img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    animation: floatUp 2s ease-in-out infinite;
+  }
+  
+  .balloon:hover {
+    transform: scale(1.05);
+  }
+  
+  .popped-photo {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    animation: revealPhoto 0.5s ease forwards;
+  }
+  
+  @keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes revealPhoto {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes floatFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .photo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .photo-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: zoomIn 0.3s ease-in-out;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.6);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

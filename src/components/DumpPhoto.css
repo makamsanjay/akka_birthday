@@ -1,0 +1,50 @@
+.dump-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dump-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #6a1b9a;
+}
+
+.dump-grid {
+  column-count: 3;
+  column-gap: 15px;
+  padding: 0 10px;
+}
+
+.dump-item {
+  break-inside: avoid;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.dump-item img,
+.dump-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.see-more-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #ff80ab;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #ec407a;
+}

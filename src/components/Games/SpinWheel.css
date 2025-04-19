@@ -1,0 +1,109 @@
+.spin-container {
+  padding: 60px 20px;
+  text-align: center;
+  background: transparent;
+}
+
+.spin-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+.wheel-wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #90caf9;
+  position: relative;
+  transition: transform 2.5s ease-out;
+  background: conic-gradient(
+    #f48fb1 0deg 60deg,
+    #ce93d8 60deg 120deg,
+    #81d4fa 120deg 180deg,
+    #aed581 180deg 240deg,
+    #ffcc80 240deg 300deg,
+    #ffab91 300deg 360deg
+  );
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0% 0%;
+}
+
+.segment span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.pin {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  z-index: 10;
+}
+
+.spin-btn {
+  margin-top: 30px;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.spin-btn:hover {
+  background: #0d47a1;
+}
+
+.result-msg {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0% 0%;
+}
+
+.segment span {
+  display: block;
+  width: 100px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  transform-origin: 0 0;
+  text-align: left;
+}

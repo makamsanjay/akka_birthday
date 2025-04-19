@@ -1,0 +1,72 @@
+.magic-frame {
+    position: relative;
+    display: inline-block;
+    border: 5px solid #81d4fa;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  /* Glowing Pink Filter */
+  .pop-glow {
+    filter: hue-rotate(310deg) brightness(1.2);
+    animation: pulse 1.2s infinite ease-in-out;
+    border: 5px solid #ff69b4;
+  }
+  
+  /* Trippy Warp Filter */
+  .warp-zone {
+    transform: scale(1.02) skewX(2deg);
+    filter: hue-rotate(180deg) saturate(2.5);
+  }
+  
+  /* Sparkle Filter */
+  .sparkle-queen::after {
+    content: '✨✨';
+    position: absolute;
+    font-size: 2rem;
+    color: gold;
+    top: 10px;
+    right: 20px;
+    animation: sparkle 1s infinite ease-in-out;
+  }
+  
+  /* Rainbow Glow */
+  .party-mood {
+    animation: rainbow 2s infinite;
+  }
+  
+  /* Ghost Effect */
+  .ghost-mode {
+    filter: grayscale(1) blur(2px) opacity(0.7);
+  }
+  
+  .frame-banner {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 105, 180, 0.8);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+    font-weight: bold;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; transform: translateY(0); }
+    50% { opacity: 0.4; transform: translateY(-10px); }
+  }
+  
+  @keyframes rainbow {
+    0% { box-shadow: 0 0 10px red; }
+    25% { box-shadow: 0 0 10px orange; }
+    50% { box-shadow: 0 0 10px yellow; }
+    75% { box-shadow: 0 0 10px green; }
+    100% { box-shadow: 0 0 10px blue; }
+  }
+  
