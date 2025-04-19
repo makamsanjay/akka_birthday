@@ -15,6 +15,7 @@ import GiftReveal from './components/GiftReveal';
 import DumselodsGame from './components/DumselodsGame.js';
 import DumpPhotos from './components/DumpPhoto.js';
 import TruthOrDare from './components/TruthorDare.js';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(false);
